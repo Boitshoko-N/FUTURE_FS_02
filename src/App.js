@@ -1,7 +1,9 @@
 import React from 'react';
 import LeadCard from './components/LeadCard';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Dashboard from './components/Dashboard';
+import Login from './components/Login';
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App(){
   return(
     <Router>
       <Routes>
+        <Route path="/" element={<Login/>}></Route>
         <Route> path="/dashboard" element={<Dashboard/>}</Route>
       </Routes>
     </Router>
