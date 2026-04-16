@@ -12,14 +12,18 @@ function Login() {
   };
 
   return (
-    <div>
-      <h2>Admin Login</h2>
-      <input
-        type="password"
-        placeholder="Enter password"
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <button onClick={handleLogin}>Login</button>
+    <div className="container">
+      <div className="card">
+        <h2 style={{ textAlign: "center" }}>Admin Login</h2>
+
+        <input
+          type="password"
+          placeholder="Enter password"
+          onChange={(e) => setPassword(e.target.value)}
+        />
+
+        <button onClick={handleLogin}>Login</button>
+      </div>
     </div>
   );
 }
